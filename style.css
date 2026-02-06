@@ -1,3 +1,5 @@
+
+
 .home img {
     transition: transform 0.3s ease-in-out;
 }
@@ -71,4 +73,62 @@
     transform: scale(1.2);
     color: #ffc107;
 }
+
+
+        
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Home images hover effect */
+        .home-img {
+            transition: 0.3s ease-in-out;
+        }
+
+        .home-img:hover {
+            transform: scale(1.1);
+        }
+
+   
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: none;
+            margin-bottom: 0.4rem;
+            display: inline-block;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ffc107;
+            transform: translateX(4px);
+        }
+
+        .social-icon {
+            font-size: 1.4rem;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+            color: #ffc107;
+        }
+
+     
+        @media (max-width: 767px) {
+            section {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+
+            .home h1 {
+                font-size: 2rem;
+            }
+
+            .home p.lead {
+                font-size: 1rem;
+            }
+        }
 
